@@ -166,7 +166,7 @@ a {
 }
 
 .greeting-hello {
-  font-size: 72px;
+  font-size: 55px;
   font-weight: 700;
   font-family: "Roboto Mono", monospace;
   color: #4caf50;
@@ -174,7 +174,7 @@ a {
 }
 
 .greeting-intro {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   font-family: "Roboto Mono", monospace;
   color: #4caf50;
@@ -259,7 +259,7 @@ a {
 /* TECH */
 .skills-section {
   /* padding: 20px; */
-  margin-top: 150px;
+  margin-top: 180px;
 }
 
 .section-title {
@@ -353,5 +353,88 @@ a {
   color: #4caf50;
   background: rgba(76, 175, 80, 0.1);
 }
+.skill-card .next-icon {
+  font-size: 15px;
+  color: #4caf50;
+}
 
+.skills-category {
+  margin: 50px 0px;
+}
 /* END TECH */
+
+/* Responsive cho main layout */
+@media (max-width: 1024px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 15px;
+    max-width: 600px;
+  }
+
+  .container-aside {
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .inner-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .inner-menu ul li {
+    margin: 0 10px;
+  }
+
+  .inner-social ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive cho skills section */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .category-title {
+    font-size: 20px;
+  }
+}
