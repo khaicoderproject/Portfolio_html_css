@@ -688,29 +688,29 @@ a {
   }
 }
 
-/* Contact Section Styles */
+/* Contact Section */
 .contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 40px 20px;
   text-align: center;
+  padding: 40px 20px;
 }
 
 .section-title {
+  font-family: "Roboto Mono", monospace;
   color: #4caf50;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contact-intro {
   color: #ccc;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 40px;
 }
 
 .contact-form {
-  margin-bottom: 40px;
+  max-width: 500px;
+  margin: 0 auto 40px;
 }
 
 .form-group {
@@ -720,17 +720,17 @@ a {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px 16px;
+  padding: 12px 15px;
   background: #1a1a1a;
-  border: 1px solid #333;
+  border: 1px solid #4caf50;
   border-radius: 8px;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .form-group textarea {
+  min-height: 150px;
   resize: vertical;
-  min-height: 120px;
 }
 
 .submit-btn {
@@ -741,7 +741,7 @@ a {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -751,21 +751,21 @@ a {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 40px;
 }
 
-.social-icon {
+.social-links a {
   color: #808080;
-  font-size: 24px;
+  font-size: 22px;
   transition: color 0.3s ease;
 }
 
-.social-icon:hover {
+.social-links a:hover {
   color: #4caf50;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
     padding: 30px 15px;
@@ -776,29 +776,293 @@ a {
   }
 
   .contact-intro {
-    font-size: 15px;
-  }
-
-  .form-group input,
-  .form-group textarea {
     font-size: 14px;
   }
 
   .social-links {
-    gap: 15px;
+    gap: 20px;
   }
 
-  .social-icon {
+  .social-links a {
     font-size: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .contact-container {
-    padding: 20px 10px;
+/* UPDATE CSS FOR INDEX */
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hiệu ứng cho aside */
+.container-aside {
+  animation: slideInLeft 0.8s ease forwards;
+  transition: all 0.3s ease;
+}
+
+.container-aside:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aside-head img {
+  transition: transform 0.3s ease;
+}
+
+.aside-head img:hover {
+  transform: scale(1.05);
+}
+
+/* Hiệu ứng cho skills */
+.skill-card {
+  transition: all 0.3s ease;
+  animation: scaleIn 0.5s ease forwards;
+  opacity: 0;
+  animation-delay: calc(var(--delay) * 0.1s);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: #242424;
+}
+
+.skill-card i {
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover i {
+  transform: rotate(360deg);
+}
+
+/* Hiệu ứng cho greeting */
+.greeting-hello {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.greeting-intro {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.greeting-desc {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+
+/* Hiệu ứng cho nav menu */
+.inner-menu ul li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.inner-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.inner-menu ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hiệu ứng cho social icons */
+.inner-social ul li a {
+  transition: all 0.3s ease;
+}
+
+.inner-social ul li a:hover {
+  color: #4caf50;
+  transform: translateY(-3px);
+}
+
+/* Hiệu ứng cho section titles */
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 100%;
+}
+
+/* Hiệu ứng cho scroll icon */
+.scroll-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+/* END UPDATE CSS FOR INDEX */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .container .inner-menu ul {
+    gap: 25px;
+  }
+}
+
+/* Medium screens / Tablets */
+@media (max-width: 992px) {
+  .container .inner-menu ul {
+    justify-content: center;
+    gap: 20px;
   }
 
-  .submit-btn {
-    width: 100%;
+  .container .inner-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+/* Small tablets / Large phones */
+@media (max-width: 768px) {
+  .container .inner-wrap {
+    padding: 15px;
+  }
+
+  .container .inner-menu ul {
+    gap: 15px;
+  }
+
+  .container .inner-menu ul li a {
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+  .container .inner-wrap {
+    padding: 10px;
+  }
+
+  .container .inner-menu ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .container .inner-menu ul li {
+    width: calc(50% - 6px); /* 2 items per row with gap */
+    text-align: center;
+  }
+
+  .container .inner-menu ul li a {
+    display: block;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .container .inner-menu ul {
+    gap: 8px;
+  }
+
+  .container .inner-menu ul li {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .container .inner-menu ul li a {
+    padding: 6px;
+    font-size: 13px;
+  }
+}
+
+/* Thêm style cho nút view project */
+.view-project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #4caf50;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.view-project-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.view-project-btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .view-project-btn {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
