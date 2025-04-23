@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KhaiDev (Dinh Nhu Khai) - Backend & DevOps Projects | Vietnam</title>
+    <meta name="description" content="Portfolio of KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer showcasing projects in Node.js, JavaScript, Docker, and AWS. View my latest work and contributions." />
+    <meta name="keywords" content="khaidev projects, dinh nhu khai portfolio, backend projects vietnam, devops projects, nodejs projects" />
+    <meta name="author" content="Dinh Nhu Khai" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="KhaiDev (Dinh Nhu Khai) - Backend & DevOps Projects" />
+    <meta property="og:description" content="Portfolio of KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer showcasing projects in Node.js, JavaScript, Docker, and AWS." />
+    <meta property="og:image" content="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png" />
+    <meta property="og:url" content="https://khaidev.id.vn/project.html" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://khaidev.id.vn/project.html" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -20,6 +30,40 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preload" href="./assets/css/styles.css" as="style" />
+    <link rel="preload" href="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png" as="image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dinh Nhu Khai",
+        "alternateName": ["KhaiDev", "dinhkhaidev"],
+        "jobTitle": "Backend & DevOps Engineer",
+        "url": "https://khaidev.id.vn/project.html",
+        "sameAs": [
+          "https://github.com/khaicoderproject",
+          "https://www.linkedin.com/in/dinhkhaidev/",
+          "https://www.facebook.com/DinhKhaiDev/"
+        ],
+        "image": "https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png",
+        "description": "Backend & DevOps Engineer specializing in Node.js, JavaScript, Docker, and AWS",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bien Hoa City",
+          "addressRegion": "Dong Nai Province",
+          "addressCountry": "Vietnam"
+        },
+        "email": "khaidevcontact@gmail.com",
+        "knowsAbout": [
+          "Node.js",
+          "JavaScript",
+          "Docker",
+          "AWS",
+          "Backend Development",
+          "DevOps"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -43,12 +87,12 @@
           <div class="inner-social">
             <ul>
               <li>
-                <a href="https://www.facebook.com/khai.dinh.35110/"
+                <a href="https://www.facebook.com/DinhKhaiDev/"
                   ><i class="fa-brands fa-facebook"></i
                 ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/khai-dinh-nhu-873510341/"
+                <a href="https://www.linkedin.com/in/dinhkhaidev/"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </li>
@@ -69,12 +113,14 @@
             <div class="aside-head">
               <img
                 src="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png"
-                alt=""
+                alt="KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer"
                 height="80px"
                 width="auto"
+                loading="eager"
               />
               <h3 class="aside-name">Đinh Như Khải</h3>
-              <p class="aside-role">Developer</p>
+              <span class="aside-nickname">(KhaiDev)</span>
+              <p class="aside-role">Backend & DevOps Engineer</p>
             </div>
 
             <div class="aside-info">
@@ -117,106 +163,101 @@
             </div>
           </div>
         </aside>
-        <section class="content-section">
+        <section class="content-section" itemscope itemtype="https://schema.org/Person">
           <!-- <h2 class="section-title">About Me</h2> -->
           <div class="greeting-wrap">
             <div class="featured-projects">
               <h2 class="section-title">Featured Projects</h2>
 
               <div class="project-slider">
-                <div class="project-card">
+                <div class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
                   <div class="project-image">
                     <img
                       src="https://res.cloudinary.com/dhluga71q/image/upload/v1740629420/jniikwx6mwemjswa6ldz.png"
-                      alt="Middy App Screenshot"
+                      alt="KhaiDev - E-commerce Backend System - Node.js and MongoDB"
+                      loading="lazy"
                     />
                     <img
                       src="https://res.cloudinary.com/dhluga71q/image/upload/v1740629586/dnjkvd7aiced4xnbxelq.png"
-                      alt="Middy App Screenshot"
+                      alt="KhaiDev - E-commerce Backend System - RESTful API"
+                      loading="lazy"
                     />
                   </div>
                   <div class="project-content">
-                    <h3>Web Sell</h3>
-                    <p class="project-description">
-                      The website is built for sales and is integrated with some
-                      additional features such as personal pages. This is a
-                      place for users to post articles and interact with each
-                      other like a miniature social network.
+                    <h3 itemprop="name">E-commerce Backend System</h3>
+                    <p class="project-description" itemprop="description">
+                      A robust e-commerce backend system with RESTful APIs, user authentication, 
+                      product management, and order processing. Implemented with Node.js, Express, 
+                      and MongoDB, following microservices architecture.
                     </p>
                     <div class="project-tech">
-                      <span class="tech-tag">NodeJS</span>
-                      <span class="tech-tag">Pug</span>
-                      <span class="tech-tag">MongoDB</span>
+                      <span class="tech-tag" itemprop="applicationCategory">NodeJS</span>
+                      <span class="tech-tag" itemprop="applicationCategory">Express</span>
+                      <span class="tech-tag" itemprop="applicationCategory">MongoDB</span>
+                      <span class="tech-tag" itemprop="applicationCategory">RESTful API</span>
+                      <span class="tech-tag" itemprop="applicationCategory">Docker</span>
                     </div>
                     <a
                       href="https://first-project-sell.vercel.app/"
                       target="_blank"
                       class="view-project-btn"
+                      itemprop="url"
                     >
-                      <span>Click here to view project</span>
+                      <span>View Project</span>
                       <i class="fas fa-external-link-alt"></i>
                     </a>
                   </div>
                 </div>
-
-                <!-- Navigation arrows -->
-                <!-- <button class="slider-nav prev">
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-nav next">
-                  <i class="fas fa-chevron-right"></i>
-                </button> -->
               </div>
 
               <div class="project-slider">
-                <div class="project-card">
+                <div class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
                   <div class="project-image">
                     <img
                       src="https://res.cloudinary.com/dhluga71q/image/upload/v1740629420/jniikwx6mwemjswa6ldz.png"
-                      alt="Middy App Screenshot"
+                      alt="KhaiDev - Cloud Infrastructure Setup - AWS Services"
+                      loading="lazy"
                     />
                     <img
                       src="https://res.cloudinary.com/dhluga71q/image/upload/v1740629586/dnjkvd7aiced4xnbxelq.png"
-                      alt="Middy App Screenshot"
+                      alt="KhaiDev - Cloud Infrastructure Setup - CI/CD Pipeline"
+                      loading="lazy"
                     />
                   </div>
                   <div class="project-content">
-                    <h3>Web Sell</h3>
-                    <p class="project-description">
-                      The website is built for sales and is integrated with some
-                      additional features such as personal pages. This is a
-                      place for users to post articles and interact with each
-                      other like a miniature social network.
+                    <h3 itemprop="name">Cloud Infrastructure Setup</h3>
+                    <p class="project-description" itemprop="description">
+                      Automated cloud infrastructure deployment using AWS services including EC2, 
+                      S3, and RDS. Implemented CI/CD pipeline with GitHub Actions for automated 
+                      testing and deployment.
                     </p>
                     <div class="project-tech">
-                      <span class="tech-tag">NodeJS</span>
-                      <span class="tech-tag">Pug</span>
-                      <span class="tech-tag">MongoDB</span>
+                      <span class="tech-tag" itemprop="applicationCategory">AWS</span>
+                      <span class="tech-tag" itemprop="applicationCategory">CI/CD</span>
+                      <span class="tech-tag" itemprop="applicationCategory">Docker</span>
+                      <span class="tech-tag" itemprop="applicationCategory">GitHub Actions</span>
                     </div>
                     <a
                       href="https://first-project-sell.vercel.app/"
                       target="_blank"
                       class="view-project-btn"
+                      itemprop="url"
                     >
-                      <span>Click here to view project</span>
+                      <span>View Project</span>
                       <i class="fas fa-external-link-alt"></i>
                     </a>
                   </div>
                 </div>
-
-                <!-- Navigation arrows -->
-                <!-- <button class="slider-nav prev">
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-nav next">
-                  <i class="fas fa-chevron-right"></i>
-                </button> -->
               </div>
             </div>
           </div>
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

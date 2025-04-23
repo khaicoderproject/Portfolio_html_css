@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer Contact | Vietnam</title>
+    <meta name="description" content="Contact information for KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer specializing in Node.js, JavaScript, Docker, and AWS. Get in touch for collaboration opportunities." />
+    <meta name="keywords" content="khaidev contact, dinh nhu khai email, backend developer vietnam, devops engineer contact" />
+    <meta name="author" content="Dinh Nhu Khai" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer Contact" />
+    <meta property="og:description" content="Contact information for KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer specializing in Node.js, JavaScript, Docker, and AWS." />
+    <meta property="og:image" content="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png" />
+    <meta property="og:url" content="https://khaidev.id.vn/contact.html" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://khaidev.id.vn/contact.html" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -20,6 +30,41 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preload" href="./assets/css/styles.css" as="style" />
+    <link rel="preload" href="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png" as="image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dinh Nhu Khai",
+        "alternateName": ["KhaiDev", "dinhkhaidev"],
+        "jobTitle": "Backend & DevOps Engineer",
+        "url": "https://khaidev.id.vn/contact.html",
+        "sameAs": [
+          "https://github.com/khaicoderproject",
+          "https://www.linkedin.com/in/dinhkhaidev/",
+          "https://www.facebook.com/DinhKhaiDev/"
+        ],
+        "image": "https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png",
+        "description": "Backend & DevOps Engineer specializing in Node.js, JavaScript, Docker, and AWS",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bien Hoa City",
+          "addressRegion": "Dong Nai Province",
+          "addressCountry": "Vietnam"
+        },
+        "email": "khaidevcontact@gmail.com",
+        "telephone": "+84382982055",
+        "knowsAbout": [
+          "Node.js",
+          "JavaScript",
+          "Docker",
+          "AWS",
+          "Backend Development",
+          "DevOps"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -43,12 +88,12 @@
           <div class="inner-social">
             <ul>
               <li>
-                <a href="https://www.facebook.com/khai.dinh.35110/"
+                <a href="https://www.facebook.com/DinhKhaiDev/"
                   ><i class="fa-brands fa-facebook"></i
                 ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/khai-dinh-nhu-873510341/"
+                <a href="https://www.linkedin.com/in/dinhkhaidev/"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </li>
@@ -69,12 +114,14 @@
             <div class="aside-head">
               <img
                 src="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png"
-                alt=""
+                alt="KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer"
                 height="80px"
                 width="auto"
+                loading="eager"
               />
               <h3 class="aside-name">Đinh Như Khải</h3>
-              <p class="aside-role">Developer</p>
+              <span class="aside-nickname">(KhaiDev)</span>
+              <p class="aside-role">Backend & DevOps Engineer</p>
             </div>
 
             <div class="aside-info">
@@ -117,51 +164,65 @@
             </div>
           </div>
         </aside>
-        <section class="content-section">
+        <section class="content-section" itemscope itemtype="https://schema.org/Person">
           <div class="greeting-wrap">
             <div class="contact-container">
               <h2 class="section-title">Get In Touch</h2>
 
-              <p class="contact-intro">
-                You know i can't show everything on this, right 🤔 ?<br />
-                Send me a message or connect with me on socials so<br />
-                we can work on your next big things!
+              <p class="contact-intro" itemprop="description">
+                Looking for a Backend & DevOps Engineer for your next project?<br />
+                Let's discuss how we can work together to build scalable and<br />
+                reliable systems. Connect with me through the form below or<br />
+                reach out on social media!
               </p>
 
-              <form class="contact-form">
+              <form class="contact-form" itemscope itemtype="https://schema.org/ContactPoint">
                 <div class="form-group">
-                  <input type="text" placeholder="Your Name" required />
+                  <input type="text" placeholder="Your Name" required itemprop="name" />
                 </div>
                 <div class="form-group">
-                  <input type="email" placeholder="Your Email" required />
+                  <input type="email" placeholder="Your Email" required itemprop="email" />
                 </div>
                 <div class="form-group">
-                  <input type="text" placeholder="Subject" required />
+                  <input type="text" placeholder="Project Type (e.g., Backend Development, DevOps)" required itemprop="contactType" />
                 </div>
                 <div class="form-group">
                   <textarea
-                    placeholder="Your Message"
+                    placeholder="Tell me about your project requirements and timeline"
                     rows="6"
                     required
+                    itemprop="description"
                   ></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
               </form>
 
               <div class="social-links">
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-upwork"></i></a>
-                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:khaidevcontact@gmail.com" aria-label="Email KhaiDev" itemprop="email">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://github.com/khaicoderproject" aria-label="KhaiDev GitHub" itemprop="sameAs">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dinhkhaidev/" aria-label="KhaiDev LinkedIn" itemprop="sameAs">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/DinhKhaiDev/" aria-label="KhaiDev Facebook" itemprop="sameAs">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="tel:+84382982055" aria-label="Call KhaiDev" itemprop="telephone">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
               </div>
             </div>
           </div>
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <p style="text-align: center; padding: 20px 0;">&copy; 2024 KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

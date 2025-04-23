@@ -1066,3 +1066,9 @@ a {
     font-size: 14px;
   }
 }
+
+footer > .container{
+  color: rgb(224, 222, 222);
+  text-align: center; 
+  padding: 20px 0;
+}
