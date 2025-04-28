@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Dinh Nhu Khai
+Site: https://khaidev.id.vn
+Twitter: @khaidev
+Location: Bien Hoa City, Vietnam
+
+/* THANKS */
+Font Awesome: https://fontawesome.com/
+Google Fonts: https://fonts.google.com/
+Cloudinary: https://cloudinary.com/
+
+/* SITE */
+Last update: 2024/02/26
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code

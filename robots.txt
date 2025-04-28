@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /includes/
+Disallow: /config/
+
+Sitemap: https://khaidev.id.vn/sitemap.xml
