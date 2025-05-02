@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preload" href="./assets/css/styles.css" as="style" />
     <link rel="preload" href="https://res.cloudinary.com/dkl3e9xjm/image/upload/v1740535422/zhvxscvfqyqw2afojpfm.png" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./assets/js/background.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -73,10 +75,15 @@
     </script>
   </head>
   <body>
+    <div id="bg-animation"></div>
     <header class="header">
       <div class="container">
         <div class="inner-wrap">
-          <!-- <div class="inner-logo"></div> -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="inner-menu">
             <ul>
               <li>
@@ -124,7 +131,6 @@
                 loading="eager"
               />
               <h3 class="aside-name">Đinh Như Khải</h3>
-              <span class="aside-nickname">(KhaiDev)</span>
               <p class="aside-role">Backend & DevOps Engineer</p>
             </div>
 
@@ -229,8 +235,64 @@
     </main>
     <footer>
       <div class="container">
-        <p>&copy; 2024 KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer. All rights reserved.</p>
+        <p>&copy; 2025 KhaiDev (Dinh Nhu Khai) - Backend & DevOps Engineer. All rights reserved.</p>
+        
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Professional Profiles</h4>
+            <a href="https://github.com/khaicoderproject" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-github"></i> GitHub Portfolio
+            </a>
+            <a href="https://www.linkedin.com/in/dinhkhaidev/" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+            <a href="https://stackoverflow.com/users/30430772/khai-dinh-nhu" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-stack-overflow"></i> Stack Overflow
+            </a>
+            <a href="https://dev.to/dinhkhaidev" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-dev"></i> Dev.to Blog
+            </a>
+          </div>
+
+          <div class="footer-section">
+            <h4>Development Platforms</h4>
+            <a href="https://hub.docker.com/u/khaidevdocker" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-docker"></i> Docker Hub
+            </a>
+            <a href="#" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-aws"></i> AWS Community
+            </a>
+            <a href="#" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-npm"></i> NPM Packages
+            </a>
+            <a href="#" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-medium"></i> Technical Blog
+            </a>
+          </div>
+
+          <div class="footer-section">
+            <h4>Connect & Collaborate</h4>
+            <a href="https://www.facebook.com/DinhKhaiDev/" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://twitter.com/khaidev" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="#" rel="nofollow noopener" target="_blank">
+              <i class="fab fa-discord"></i> Discord Community
+            </a>
+            <a href="mailto:khaidevcontact@gmail.com" rel="nofollow noopener">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-cta">
+          <p>Looking for a Backend & DevOps Engineer?</p>
+          <a href="./contact.html" class="cta-button">Let's Connect</a>
+        </div>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
