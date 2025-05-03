@@ -5,39 +5,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found | KhaiDev Portfolio</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .error-container {
             text-align: center;
-            padding: 50px 20px;
-            max-width: 600px;
-            margin: 0 auto;
+            padding: 80px 40px;
+            max-width: 700px;
+            margin: 100px auto;
+            background-color: rgba(31, 31, 31, 0.7);
+            border: 3px solid rgba(128, 128, 128, 0.5);
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.8s ease forwards;
+            position: relative;
+            overflow: hidden;
+        }
+        .error-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(76, 175, 80, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
         }
         .error-code {
-            font-size: 120px;
-            color: #f3e075;
+            font-size: 150px;
+            font-family: 'Fira Code', monospace;
+            color: #4caf50;
             margin: 0;
+            text-shadow: 0 0 20px rgba(76, 175, 80, 0.4);
+            animation: scaleIn 0.5s ease forwards, glow 2s ease-in-out infinite alternate;
+            position: relative;
+            display: inline-block;
+        }
+        .error-code::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: #4caf50;
+            animation: lineGrow 1s ease forwards 0.5s;
         }
         .error-message {
-            font-size: 24px;
-            margin: 20px 0;
+            font-size: 32px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin: 30px 0;
+            color: #ffffff;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.2s;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .error-desc {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.4s;
+            line-height: 1.6;
         }
         .home-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f3e075;
-            color: #000;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 35px;
+            background: rgba(76, 175, 80, 0.8);
+            color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            backdrop-filter: blur(5px);
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.6s;
+            position: relative;
+            overflow: hidden;
+        }
+        .home-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+        .home-button:hover {
+            background: rgba(76, 175, 80, 0.9);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        .home-button:hover::before {
+            left: 100%;
+        }
+        .home-button i {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .home-button:hover i {
+            transform: translateX(-5px);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(76, 175, 80, 0.6),
+                            0 0 30px rgba(76, 175, 80, 0.4);
+            }
+        }
+        @keyframes lineGrow {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80%;
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 60px 30px;
+                margin: 60px 20px;
+            }
+            .error-code {
+                font-size: 120px;
+            }
+            .error-message {
+                font-size: 28px;
+            }
+            .error-desc {
+                font-size: 16px;
+            }
+            .home-button {
+                padding: 12px 30px;
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .error-container {
+                padding: 40px 20px;
+                margin: 40px 15px;
+            }
+            .error-code {
+                font-size: 100px;
+            }
+            .error-message {
+                font-size: 24px;
+            }
+            .error-desc {
+                font-size: 15px;
+            }
+            .home-button {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
+    <div id="bg-animation"></div>
     <div class="error-container">
         <h1 class="error-code">404</h1>
         <p class="error-message">Oops! The page you're looking for doesn't exist.</p>
-        <p>You might have typed the wrong address or the page has been moved.</p>
-        <a href="/" class="home-button">Back to Home</a>
+        <p class="error-desc">You might have typed the wrong address or the page has been moved. Let's get you back on track!</p>
+        <a href="/" class="home-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./assets/js/background.js"></script>
+    <script>
+        // Kiểm tra xem trang hiện tại có phải là 404 không
+        if (window.location.pathname !== '/404.html') {
+            // Lấy danh sách các trang hợp lệ
+            const validPages = [
+                '/',
+                '/index.html',
+                '/resume.html',
+                '/project.html',
+                '/contact.html'
+            ];
+
+            // Kiểm tra xem URL hiện tại có trong danh sách không
+            if (!validPages.includes(window.location.pathname)) {
+                // Nếu không, chuyển hướng đến trang 404
+                window.location.href = '/404.html';
+            }
+        }
+
+        // Thêm event listener cho tất cả các link
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.getElementsByTagName('a');
+            for (let link of links) {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    // Kiểm tra xem link có phải là internal link không
+                    if (href && !href.startsWith('http') && !href.startsWith('#')) {
+                        // Kiểm tra xem trang có tồn tại không
+                        fetch(href)
+                            .then(response => {
+                                if (!response.ok) {
+                                    e.preventDefault();
+                                    window.location.href = '/404.html';
+                                }
+                            })
+                            .catch(() => {
+                                e.preventDefault();
+                                window.location.href = '/404.html';
+                            });
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
